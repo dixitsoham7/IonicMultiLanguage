@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        Ionic Blank
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+  
+    <!-- <ion-list>  //we can also change language on this page
+      <ion-item>
+        <ion-label>Language</ion-label>
+        <ion-select [(ngModel)]="language" (ionChange)="switchLanguage()">
+          <ion-option value="english">English</ion-option>
+          <ion-option value="hindi">Hindi</ion-option>
+          <ion-option value="marathi">Marathi</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list> -->
+  
+   
+      <ion-item>
+        <p>
+            {{ 'home'  | translate }} <br>
+            {{ 'about' | translate }} <br>
+            {{ 'welcome' | translate }} <br>
+            {{ 'contact' | translate }}
+        </p>
+      </ion-item>
+  
+  </ion-content>
